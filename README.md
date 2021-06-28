@@ -1,10 +1,12 @@
 # REST API Model
+Model for building an REST API. The model has user table creation, authentication and use of JsonWebToken.
 
 ## Technologies used
 - TypeScript
 - Eslint and Prettier
 - Express
 - Typeorm
+- JsonWebToken
 - Dotenv
 
 ## How to Use
