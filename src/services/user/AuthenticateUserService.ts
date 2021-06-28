@@ -9,7 +9,7 @@ interface IAuthenticateRequest {
 }
 
 class AuthenticateUserService {
-  async execute({ email, password }: IAuthenticateRequest) {
+  async execute({ email, password }: IAuthenticateRequest): Promise<string> {
     const UsersRepository = getCustomRepository(UsersRepositories);
 
     const user = await UsersRepository.findOne({ email });
